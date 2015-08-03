@@ -1,0 +1,13 @@
+language: python
+python:
+  - '2.7'
+# command to install dependencies
+install:
+  - 'easy_install -U setuptools'
+  - 'pip install -U pip'
+  - 'pip install -e .[tests]'
+# command to run tests
+script:
+  - 'py.test -svvv --cov-report term-missing --cov nowin_core nowin_core/tests'
+  - 'pip install flake8 --use-mirrors'
+  - 'flake8 nowin_core --ignore=E501,W293'
