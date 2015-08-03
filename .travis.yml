@@ -9,5 +9,5 @@ install:
 # command to run tests
 script:
   - 'py.test -svvv --cov-report term-missing --cov nowin_core nowin_core/tests'
-  - 'pip install flake8 --use-mirrors'
+  - 'pip install flake8'
   - 'flake8 nowin_core --ignore=E501,W293'
