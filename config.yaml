@@ -1,0 +1,6 @@
+---
+
+database:
+    uri: mysql://nowin:nowin@localhost/nowin?charset=utf8
+
+...
